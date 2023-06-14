@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="US-en">
+	<head>
+		<meta charset = "UTF-8"/>
+		<meta http-equiv = "X-UA_Compatible" content = "IE=edge"/>
+		<meta name="viewport", content="width=device-width, initial-scale=1.0"/>
+		<style>
+			* {
+				background-color: pink;
+			}
+			h1 {
+				text-align: center; 
+				margin:5px 5px;
+			}	
+			h2 {
+				width: 25%;
+				margin-inline:auto;
+				text-align:center;
+				border:2px outset blue;
+				padding:5px;
+			}
+			
+			.personalInformation, .openElective2 , .openElective3, .rating, .reviews, .submission{
+				margin-left:35%;
+			}
+					
+			b {
+				background-color: lightskyblue;;			
+			}
+		</style>
+		<title>Student Feedback Form</title>
+	</head>
+	
+	<body>
+		<header>
+			<h1>JSS Science and Technology University, Mysuru-570006</h1>
+			<h2>Student Feedback Form</h2>		
+		</header>
+		
+		<main>
+			<form>
+				<fieldset>
+					<legend><strong>6<sup>th</sup>&nbsp;Semester</strong></legend>
+					<div class="personalInformation">
+						<label for="name">Name:</label>
+						<input type="text" id="name" autofocus="on" required placeholder="Nin hesru">
+						<br><br>
+					
+						<label for="usn">USN:</label>
+						<input type="text" id="usn" placeholder="01JST21CS111" required>
+						<br><br>
+					
+						<label for="rNo">Roll Number:</label>
+						<input type="number" id="rNo" placeholder="45" max="60" min="1" required>
+						<br><br>
+					
+						<label for="email">Email: </label>
+						<input type="email" id="email" placeholder="ninhesru@gmail.com" required>
+						<br><br>		
+					</div>
+				
+					<div class="openElective2">
+					<label><mark><b>Open Electives</b></mark></label>
+					<br><br>
+						<label><em>Open Elective-2</em></label>
+						<br>
+						<input type="checkbox" id="OE2_1" name="OE2_1" value="OE2_1">
+						<label for="OE2_1">Biology for Engineers</label>
+						<br><br>
+						
+						<input type="checkbox" id="OE2_2" name="OE2_2" value="OE2_2">
+						<label for="OE2_2">Python Programming</label>
+						<br><br>
+						
+						<input type="checkbox" id="OE2_3" name="OE2_3" value="OE2_3">
+						<label for="OE2_3">Automotive Instrumentation</label>
+						<br><br>
+						
+						<input type="checkbox" id="OE2_4" name="OE2_4" value="OE2_4">
+						<label for="OE2_4">Automotive Electronics</label>
+						<br><br>
+						
+						<input type="checkbox" id="OE2_5" name="OE2_5" value="OE2_5">
+						<label for="OE2_5">Forensic Chemistry</label>
+						<br><br>
+					</div>
+					
+					<div class="openElective3">
+						<label><em>Open Elective-3</em></label>
+						<br>
+						<input type="radio" id="OE3_1" name="OE3" value="OE3_1">
+						<label for="OE3_1">Biology for Engineers</label>
+						<br><br>
+						
+						<input type="radio" id="OE3_2" name="OE3" value="OE3_2">
+						<label for="OE2_2">Python Programming</label>
+						<br><br>
+						
+						<input type="radio" id="OE2_3" name="OE3" value="OE3_3">
+						<label for="OE2_3">Automotive Instrumentation</label>
+						<br><br>
+						
+						<input type="radio" id="OE3_4" name="OE3" value="OE3_4">
+						<label for="OE2_4">Automotive Electronics</label>
+						<br><br>
+						
+						<input type="radio" id="OE3_5" name="OE3" value="OE3_5">
+						<label for="OE2_5">Forensic Chemistry</label>
+						<br><br>
+					</div>
+					
+					<div class="rating">
+						<label for="rating">Rating: </label>	
+						<select name="rating" id="rating">
+							<optgroup>
+								<option value="Excellent">Excellent</option>	
+								<option value="Good">Good</option>	
+								<option value="Average">Average</option>	
+								<option value="Poor">Poor</option>							
+							</optgroup>							
+						</select>			
+					</div>
+					
+					<div class="reviews">
+							<p>Feedback for Open Electives</p>	
+							<textarea style="margin-left:5%;"id="OEreview" name="OEreview" rows="5" cols="15" placeholder="Type here"></textarea>				
+					</div>
+					<br>
+					<div class="submission">
+						<input type="submit" value="Submit">
+						<input type="reset" value="Reset">
+					</div>
+				</fieldset>
+			</form>
+		</main>
+		
+	</body>
+	
