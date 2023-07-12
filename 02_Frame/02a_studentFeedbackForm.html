@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Feedback Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #e4c1f9;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2em;
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      label {
+        font-weight: bold;
+        margin: 10px 0;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        font-size: 1em;
+      }
+
+      select {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        font-size: 1em;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        padding: 5px 10px;
+        background-color: #0077cc;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        margin-top: 10px;
+      }
+
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: #0066b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Student Feedback Form</h1>
+    </div>
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mobile">Mobile:</label>
+      <input type="text" id="mobile" name="mobile" required /><br />
+
+      <label for="language">Open electives opted:</label><br />
+      <input type="checkbox" id="01" name="01" />
+      <label for="language">Biology for Engineers</label><br />
+      <input type="checkbox" id="02" name="02" />
+      <label for="language">Python Programming</label><br />
+      <input type="checkbox" id="03" name="03" />
+      <label for="language">Alternative Building Materials and technology</label
+      ><br />
+      <input type="checkbox" id="04" name="04" />
+      <label for="language">Sustainability in Engineering</label><br />
+      <input type="checkbox" id="05" name="05" />
+      <label for="language">Automotive Electronics</label><br /><br />
+
+      <label for="language">Open elective 2:</label><br />
+      <input type="radio" id="01" name="01" />
+      <label for="language">Biology for Engineers</label><br />
+      <input type="radio" id="02" name="02" />
+      <label for="language">Python Programming</label><br />
+      <input type="radio" id="03" name="03" />
+      <label for="language">Alternative Building Materials and technology</label
+      ><br />
+      <input type="radio" id="04" name="04" />
+      <label for="language">Sustainability in Engineering</label><br />
+      <input type="radio" id="05" name="05" />
+      <label for="language">Automotive Electronics</label><br /><br />
+
+      <label for="language">Rating:</label>
+      <select name="language" id="language">
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Average">Average</option>
+        <option value="Poor">Poor</option>
+      </select>
+
+      <p><label for="w3review">Feedback for Open elective 2</label></p>
+      <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+      <br /><br />
+
+      <label for="language">Open elective 3:</label><br />
+      <input type="radio" id="01" name="01" />
+      <label for="language">Biology for Engineers</label><br />
+      <input type="radio" id="02" name="02" />
+      <label for="language">Python Programming</label><br />
+      <input type="radio" id="03" name="03" />
+      <label for="language">Alternative Building Materials and technology</label
+      ><br />
+      <input type="radio" id="04" name="04" />
+      <label for="language">Sustainability in Engineering</label><br />
+      <input type="radio" id="05" name="05" />
+      <label for="language">Automotive Electronics</label><br /><br />
+
+      <label for="language">Rating:</label>
+      <select name="language" id="language">
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Average">Average</option>
+        <option value="Poor">Poor</option>
+      </select>
+
+      <p><label for="w3review">Feedback for Open elective 3</label></p>
+      <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
